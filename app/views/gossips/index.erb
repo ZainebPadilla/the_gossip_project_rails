@@ -5,9 +5,9 @@
 </head>
 
 <body>
-
+ <header>
     <h1 class="pixel">THE GOSSIP PROJECT</h1>
-
+ </header>
     <div class="gossip_container">
         <% @gossips.each do |gossip| 
         author = User.find gossip.user_id
