@@ -16,5 +16,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'gossips#index'
 
+  get 'welcome/:name', to: "welcome#index"
+
   #get 'gossips/' => "rails/gossipindex", as: :gossip_index
 end

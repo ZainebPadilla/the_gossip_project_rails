@@ -1,10 +1,38 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title> TheGossipProject </title>
 </head>
 
 <body>
-    <p> Hello Wordl </p>
+
+    <h1 class="pixel">THE GOSSIP PROJECT</h1>
+
+    <div class="gossip_container">
+        <% @gossips.each do |gossip| 
+        author = User.find gossip.user_id
+        author_name = author.first_name + " " + author.last_name%>
+    
+
+        <div class="gossip_card">
+
+            <div class="gossip_title">
+            <p><%= gossip.title %></p>
+            </div>
+
+            <div class = "gossip_content">
+            <p> <%= gossip.content %>
+            </div>
+
+            <div class="gossip_author">
+            <p>- <%= author_name%>
+            </div>
+
+        </div>
+
+        <% end %>
+
+    </div>
 </body>
 
 </html>
