@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> TheGossipProject </title>
+</head>
+
+<body>
+
+    
+    <% 
+    
+    user_name = @user.first_name + " " + @user.last_name
+
+    %>
+    <h1 class="pixel"> <%= user_name %></h1>
+    <div class="gossip_card">
+
+        email : <%= @user.email %> </br>
+        age: <%= @user.age%> </br>
+        descirption: <%= @user.description%>
+
+    </div>
+</body>
+
+</html>

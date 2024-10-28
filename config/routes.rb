@@ -18,5 +18,9 @@ Rails.application.routes.draw do
 
   get 'welcome/:name', to: "welcome#index"
 
+  get "gossips/:gossip_id", to: "gossips#single_gossip", as: :single_gossip
+
+  get "users/:user_id", to: "users#user_profile", as: :user_profile
+
   #get 'gossips/' => "rails/gossipindex", as: :gossip_index
 end

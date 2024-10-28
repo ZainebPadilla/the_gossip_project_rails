@@ -11,7 +11,7 @@
     <div class="gossip_container">
         <% @gossips.each do |gossip| 
         author = User.find gossip.user_id
-        author_name = author.first_name + " " + author.last_name%>
+        author_name = author.first_name %>
     
 
         <div class="gossip_card">
@@ -20,12 +20,13 @@
             <p><%= gossip.title %></p>
             </div>
 
-            <div class = "gossip_content">
-            <p> <%= gossip.content %>
-            </div>
 
             <div class="gossip_author">
             <p>- <%= author_name%>
+            </div>
+
+            <div class="link_to_single_gossip">
+                <%= link_to "Voir le gossip", single_gossip_path(gossip.id) %>
             </div>
 
         </div>

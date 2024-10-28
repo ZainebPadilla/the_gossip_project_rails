@@ -91,3 +91,7 @@ h1{
     display: flex;
     justify-content: center;
  }
+
+ .link_to_single_gossip{
+   margin-left: auto;
+ }
