@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+HEAD
 body {
 
     font-family: Lucida Sans;
@@ -167,3 +168,83 @@ h1 {
     }
   }
   
+
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&display=swap');
+
+
+.pixel{
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.welcometext{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-size: 75px;
+    
+}
+
+ body{
+    background-color: rgb(1, 9, 22);
+    color: white;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    
+ }
+
+.gossip_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    justify-self: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: rgb(71, 74, 223);
+    font-size: 100px;
+}
+ .gossip_card{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: solid rgb(252, 252, 252);
+    border-radius: 10px;
+    width: 750px;
+    background-color: rgb(17 17 17);
+ }
+
+ a.homeButton{
+    padding: 1px 6px;
+    border: 1px solid ;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    justify-self: center;
+    font-size: larger;
+ }
+
+ a.homeButton :hover{
+    padding: 1px 6px;
+    border: 1px solid ;
+    border-radius: 3px;
+    color: rgb(17 17 17);
+    background-color: white;
+    text-decoration: none;
+    justify-self: center;
+    font-size: larger;
+ }
+
+ .center{
+    display: flex;
+    justify-content: center;
+ }
+

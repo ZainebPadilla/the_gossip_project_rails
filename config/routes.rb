@@ -11,7 +11,12 @@ Rails.application.routes.draw do
   get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  #get "gossips/", to: 'gossips#index'
 
+  # Defines the root path route ("/")
+  root 'gossips#index'
+
+  get 'welcome/:name', to: "welcome#index"
+
+  #get 'gossips/' => "rails/gossipindex", as: :gossip_index
 end
