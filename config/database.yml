@@ -23,6 +23,8 @@ default: &default
 development:
   <<: *default
   database: the_gossip_project_development
+  username: thegossipproject
+  password: 1234
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
