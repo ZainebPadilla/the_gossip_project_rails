@@ -22,5 +22,7 @@ Rails.application.routes.draw do
 
   get "users/:user_id", to: "users#user_profile", as: :user_profile
 
-  #get 'gossips/' => "rails/gossipindex", as: :gossip_index
+ 
+  resources :gossips, only: [:index, :new, :create]
+  
 end
